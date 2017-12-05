@@ -13,9 +13,9 @@ Google Books Apiを用いてisbn・バーコードリーダーで書籍を登録
 - Ruby 2.4.0
 - RoR 5.1.4
 - jQuery 3.2.1
-- React 16.2.0
-- webpack
-- babel
 
 
+## Todo
+BookDB_Labリポジトリからお引越ししました。
 
+BookDB_LabではReactを用いていましたが、デプロイで引っかかってしまいjQueryで動いています。
