@@ -1,4 +1,4 @@
-# BookDB_Lab
+# VisionLabBookDB
 
 ## description
 研究室用に作成した書籍データベース。研究室に本が多いので、なんの本があるかわからなかったので作成。
