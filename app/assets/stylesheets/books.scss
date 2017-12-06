@@ -66,7 +66,7 @@ input, textarea, .uneditable-input {
 }
 
 input {
-  height: auto !important;
+  height: auto;
 }
 
 #book_image_name{
@@ -77,6 +77,24 @@ input {
   margin-bottom: 100px;
 }
 
+.search_book{
+  margin: 0 auto;
+  // width: 80%;
+  input.btn{
+    width: 50px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+  #search_title , #book_isbn{
+    width: 80%;
+  }
+}
+
+.search_title, .search_isbn{
+  margin-top: 20px;
+}
 /* index */
 .tana{
 
@@ -117,4 +135,9 @@ input {
 /* show */
 .book-propety{
   width: 150px;
+}
+
+.table{
+  margin: 0 auto;
+  width: 55% !important;
 }
