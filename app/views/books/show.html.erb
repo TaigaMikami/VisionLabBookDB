@@ -3,41 +3,41 @@
   <img src="<%= @book.image_name %>" />
 </h1>
 <h1>  <%= @book.title %></h1>
-
-<table class="table">
-  <thead class="thead-default">
-    <tr>
-      <th>項目</th>
-      <th>内容</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th class="book-propety">著者</th>
-      <td><%= @book.author %></td>
-    </tr>
-    <tr>
-      <th class="book-propety">説明</th>
-      <td><%= @book.description %></td>
-    </tr>
-    <tr>
-      <th class="book-propety">出版社</th>
-      <td><%= @book.publisher %></td>
-    </tr>
-    <tr>
-      <th class="book-propety">出版日</th>
-      <td><%= @book.publishdate %></td>
-    </tr>
-    <tr>
-      <th class="book-propety">ページ数</th>
-      <td><%= @book.pagecount %></td>
-    </tr>
-    <tr>
-      <th class="book-propety">Textshippet</th>
-      <td><%= @book.textshippet %></td>
-    </tr>
-  </tbody>
-</table>
-
-<%= link_to "delete", @book, method: :delete,
-                                data: { confirm: "You sure?" } %>
+<div class="book_contents">
+  <table class="table">
+    <thead class="thead-default">
+      <tr>
+        <th>項目</th>
+        <th>内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="book-propety">著者</th>
+        <td><%= @book.author %></td>
+      </tr>
+      <tr>
+        <th class="book-propety">説明</th>
+        <td><%= @book.description %></td>
+      </tr>
+      <tr>
+        <th class="book-propety">出版社</th>
+        <td><%= @book.publisher %></td>
+      </tr>
+      <tr>
+        <th class="book-propety">出版日</th>
+        <td><%= @book.publishdate %></td>
+      </tr>
+      <tr>
+        <th class="book-propety">ページ数</th>
+        <td><%= @book.pagecount %></td>
+      </tr>
+      <tr>
+        <th class="book-propety">Textshippet</th>
+        <td><%= @book.textshippet %></td>
+      </tr>
+    </tbody>
+  </table>
+    <%= link_to "delete", @book, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+</div>

@@ -136,8 +136,10 @@ input {
 .book-propety{
   width: 150px;
 }
-
-.table{
-  margin: 0 auto;
-  width: 55% !important;
+.book_contents{
+  margin-bottom: 100px;
+  .table{
+    margin: 0 auto;
+    width: 55% !important;
+  }
 }
