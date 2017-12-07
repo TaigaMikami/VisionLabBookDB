@@ -19,6 +19,9 @@
       <!-- <div id="info_search_button">検索</div> -->
 
       <hr>
+      <label>書籍場所</label>
+      <%= f.select :place, [["実験ブース本棚", "実験ブース本棚"], ["学生ブース", "学生ブース"], ["溝上部屋", "溝上部屋"]] ,class:"form-control" %>
+      <br>
       <%= f.label :title %>
       <%= f.text_field :title %>
 
