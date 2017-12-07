@@ -1,0 +1,37 @@
+<% provide(:title, '書籍編集') %>
+<h1>書籍編集</h1>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(@book) do |f| %>
+      <label>書籍場所</label>
+      <%= f.select :place, [["実験ブース本棚", "実験ブース本棚"], ["学生ブース", "学生ブース"], ["溝上部屋", "溝上部屋"]] ,class:"form-control" %>
+      <br>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+
+      <%= f.label :author %>
+      <%= f.text_field :author %>
+
+      <%= f.label :publisher %>
+      <%= f.text_field :publisher %>
+
+      <%= f.label :publishdate %>
+      <%= f.text_field :publishdate %>
+
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+
+      <%= f.label :pagecount %>
+      <%= f.number_field :pagecount %>
+
+      <div id="book_thumbnail"></div>
+      <%= f.text_field :image_name %>
+
+      <%= f.label :textshippet %>
+      <%= f.text_area :textshippet %>
+
+      <%= f.submit "Save changes", class: "btn btn-info" %>
+    <% end %>
+  </div>
+</div>

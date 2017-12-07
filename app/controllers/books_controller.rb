@@ -23,6 +23,20 @@ class BooksController < ApplicationController
     end
   end
 
+  def edit
+    @book = Book.find(params[:id])
+  end
+
+  def update
+    @book = Book.find(params[:id])
+    if @book.update_attributes(book_params)
+      flash[:success] = "Chage New Book's Info"
+      redirect_to @book
+    else
+      render 'edit'
+    end
+  end
+
   def destroy
     Book.find(params[:id]).destroy
     flash[:success] = "Book deleted"

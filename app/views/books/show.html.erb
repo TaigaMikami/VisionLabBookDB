@@ -42,6 +42,7 @@
       </tr>
     </tbody>
   </table>
-    <%= link_to "delete", @book, method: :delete,
+    <%= link_to "編集", edit_book_path(@book) %> |
+    <%= link_to "削除", @book, method: :delete,
                                   data: { confirm: "You sure?" } %>
 </div>
